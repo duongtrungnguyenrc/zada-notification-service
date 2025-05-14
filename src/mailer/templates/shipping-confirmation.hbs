@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{t "shippingConfirmation.subject" orderNumber=orderNumber}}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .shipping-icon {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .shipping-icon img {
+            width: 80px;
+            height: auto;
+        }
+        .tracking-info {
+            background-color: #f5f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .tracking-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4a6ee0;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4a6ee0;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .order-details {
+            margin-top: 30px;
+        }
+        .order-item {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .item-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+        .item-details {
+            flex: 1;
+        }
+        .item-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .item-quantity {
+            color: #666;
+            font-size: 14px;
+        }
+        .delivery-address {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .address-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4a6ee0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+        .help-text {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        .delivery-progress {
+            margin: 30px 0;
+            position: relative;
+            height: 5px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            position: absolute;
+            height: 5px;
+            background-color: #4a6ee0;
+            border-radius: 5px;
+            width: 30%;
+        }
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .progress-step {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            width: 25%;
+        }
+        .progress-step.active {
+            color: #4a6ee0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
+        </div>
+        <div class="content">
+            <h2>{{t "shippingConfirmation.title"}}</h2>
+            <p>{{t "common.greeting"}} {{userName}},</p>
+            <p>{{t "shippingConfirmation.message"}}</p>
+            
+            <div class="shipping-icon">
+                <img src="{{shippingIconUrl}}" alt="Shipping Icon">
+            </div>
+            
+            <div class="tracking-info">
+                <div>{{t "shippingConfirmation.orderNumber" orderNumber=orderNumber}}</div>
+                <div class="tracking-number">{{t "shippingConfirmation.trackingNumber" trackingNumber=trackingNumber}}</div>
+                <div>{{t "shippingConfirmation.carrier" carrier=carrier}}</div>
+                <div>{{t "shippingConfirmation.estimatedDelivery" deliveryDate=estimatedDelivery}}</div>
+            </div>
+            
+            <div class="delivery-progress">
+                <div class="progress-bar"></div>
+                <div class="progress-steps">
+                    <div class="progress-step active">{{t "processed"}}</div>
+                    <div class="progress-step active">{{t "shipped"}}</div>
+                    <div class="progress-step">{{t "outForDelivery"}}</div>
+                    <div class="progress-step">{{t "delivered"}}</div>
+                </div>
+            </div>
+            
+            <p>{{t "shippingConfirmation.trackingMessage"}}</p>
+            
+            <div style="text-align: center;">
+                <a href="{{trackingUrl}}" class="button">{{t "shippingConfirmation.buttonText"}}</a>
+            </div>
+            
+            <div class="delivery-address">
+                <div class="address-title">{{t "shippingConfirmation.deliveryAddress"}}</div>
+                <p>
+                    {{shippingAddress.name}}<br>
+                    {{shippingAddress.street}}<br>
+                    {{shippingAddress.city}}, {{shippingAddress.state}} {{shippingAddress.zip}}<br>
+                    {{shippingAddress.country}}
+                </p>
+            </div>
+            
+            <div class="order-details">
+                <h3>{{t "shippingConfirmation.itemsShipped"}}</h3>
+                
+                {{#each items}}
+                <div class="order-item">
+                    <img src="{{this.imageUrl}}" alt="{{this.name}}" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">{{this.name}}</div>
+                        <div class="item-quantity">{{t "quantity"}}: {{this.quantity}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            
+            <div class="help-text">
+                <p>{{t "shippingConfirmation.questions"}}</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>{{t "common.footer.copyright"}}</p>
+            <p>{{t "common.footer.support"}} <a href="mailto:{{t "common.footer.supportEmail"}}">{{t "common.footer.supportEmail"}}</a></p>
+            <p>{{t "common.footer.address"}}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "common": {
+    "greeting": "Xin chào {{userName}}",
+    "footer": {
+      "copyright": "© {{currentYear}} Zada. Đã đăng ký bản quyền.",
+      "support": "Nếu bạn cần hỗ trợ, vui lòng liên hệ với đội ngũ hỗ trợ của chúng tôi tại",
+      "supportEmail": "support@zada.com",
+      "address": "Zada, Inc. • 123 Commerce Street • San Francisco, CA 94107",
+      "automated": "Đây là email tự động. Vui lòng không trả lời email này.",
+      "unsubscribe": "Hủy đăng ký",
+      "preferences": "Tùy chọn email"
+    },
+    "buttons": {
+      "viewAccount": "Xem Tài Khoản",
+      "shopNow": "Mua Sắm Ngay",
+      "viewDetails": "Xem Chi Tiết",
+      "trackOrder": "Theo Dõi Đơn Hàng",
+      "continue": "Tiếp Tục Mua Sắm"
+    }
+  },
+  "resetPassword": {
+    "subject": "Đặt Lại Mật Khẩu Zada Của Bạn",
+    "title": "Đặt Lại Mật Khẩu Của Bạn",
+    "message": "Chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản Zada của bạn. Để tiếp tục đặt lại mật khẩu, vui lòng sử dụng Mật Khẩu Một Lần (OTP) sau đây:",
+    "otpExpiry": "Mã này sẽ hết hạn trong 10 phút.",
+    "ignoreMessage": "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này hoặc liên hệ với đội ngũ hỗ trợ của chúng tôi nếu bạn có thắc mắc.",
+    "alternativeReset": "Ngoài ra, bạn có thể đặt lại mật khẩu trực tiếp bằng cách nhấp vào nút bên dưới:",
+    "buttonText": "Đặt Lại Mật Khẩu",
+    "helpText": "Nếu bạn gặp sự cố với nút ở trên, hãy sao chép và dán URL bên dưới vào trình duyệt web của bạn:"
+  },
+  "newAccount": {
+    "subject": "Chào mừng đến với Zada!",
+    "title": "Chào mừng đến với Zada, {{userName}}!",
+    "message": "Cảm ơn bạn đã tạo tài khoản với chúng tôi. Tài khoản của bạn đã được tạo thành công và sẵn sàng sử dụng.",
+    "getStarted": "Bắt đầu bằng cách khám phá các sản phẩm của chúng tôi và tận hưởng trải nghiệm mua sắm liền mạch.",
+    "buttonText": "Bắt Đầu Mua Sắm",
+    "benefits": {
+      "title": "Lợi ích của tài khoản Zada:",
+      "fastCheckout": "Thanh toán nhanh chóng và dễ dàng",
+      "orderTracking": "Theo dõi đơn hàng của bạn theo thời gian thực",
+      "saveItems": "Lưu các mặt hàng vào danh sách yêu thích",
+      "exclusiveOffers": "Truy cập các ưu đãi và khuyến mãi độc quyền",
+      "orderHistory": "Xem lịch sử đơn hàng của bạn"
+    },
+    "completeProfile": "Hoàn thành hồ sơ của bạn để nhận các đề xuất và ưu đãi cá nhân hóa.",
+    "completeProfileButton": "Hoàn Thành Hồ Sơ",
+    "reportSignup": "Bạn nhận được email này vì bạn đã đăng ký Zada. Nếu bạn không đăng ký, vui lòng cho chúng tôi biết."
+  },
+  "verifyEmail": {
+    "subject": "Xác Minh Email Của Bạn cho Zada",
+    "title": "Xác Minh Địa Chỉ Email Của Bạn",
+    "message": "Cảm ơn bạn đã chọn Zada! Để hoàn tất đăng ký và truy cập tất cả các tính năng, vui lòng xác minh địa chỉ email của bạn bằng mã xác minh dưới đây:",
+    "otpExpiry": "Mã này sẽ hết hạn trong 30 phút.",
+    "verifyPrompt": "Vui lòng nhập mã này trên trang xác minh để xác nhận địa chỉ email của bạn.",
+    "alternativeVerify": "Ngoài ra, bạn có thể xác minh email của mình trực tiếp bằng cách nhấp vào nút bên dưới:",
+    "buttonText": "Xác Minh Địa Chỉ Email",
+    "benefits": {
+      "title": "Lợi ích của việc xác minh email:",
+      "secureAccount": "Bảo mật tài khoản và thông tin cá nhân của bạn",
+      "orderUpdates": "Nhận cập nhật đơn hàng và thông báo vận chuyển",
+      "specialOffers": "Nhận các ưu đãi và khuyến mãi đặc biệt",
+      "passwordReset": "Kích hoạt chức năng đặt lại mật khẩu"
+    },
+    "ignoreMessage": "Nếu bạn không tạo tài khoản trên Zada, vui lòng bỏ qua email này hoặc liên hệ với đội ngũ hỗ trợ của chúng tôi nếu bạn có thắc mắc."
+  },
+  "orderConfirmation": {
+    "subject": "Xác Nhận Đơn Hàng - Đơn Hàng Zada #{{orderNumber}}",
+    "title": "Cảm Ơn Bạn Đã Đặt Hàng!",
+    "message": "Chúng tôi đã nhận được đơn hàng của bạn và đang xử lý ngay lập tức.",
+    "orderNumber": "Mã Đơn Hàng: #{{orderNumber}}",
+    "orderDate": "Ngày Đặt Hàng: {{orderDate}}",
+    "orderSummary": "Tóm Tắt Đơn Hàng",
+    "shippingAddress": "Địa Chỉ Giao Hàng",
+    "billingAddress": "Địa Chỉ Thanh Toán",
+    "paymentMethod": "Phương Thức Thanh Toán",
+    "shippingMethod": "Phương Thức Vận Chuyển",
+    "subtotal": "Tạm Tính",
+    "shipping": "Phí Vận Chuyển",
+    "tax": "Thuế",
+    "discount": "Giảm Giá",
+    "total": "Tổng Cộng",
+    "estimatedDelivery": "Dự Kiến Giao Hàng: {{deliveryDate}}",
+    "trackingInfo": "Chúng tôi sẽ gửi cho bạn thông tin theo dõi khi đơn hàng của bạn được vận chuyển.",
+    "questions": "Nếu bạn có bất kỳ câu hỏi nào về đơn hàng của mình, vui lòng liên hệ với đội ngũ dịch vụ khách hàng của chúng tôi.",
+    "buttonText": "Xem Chi Tiết Đơn Hàng"
+  },
+  "shippingConfirmation": {
+    "subject": "Đơn Hàng Zada Của Bạn Đã Được Vận Chuyển - Đơn Hàng #{{orderNumber}}",
+    "title": "Đơn Hàng Của Bạn Đang Trên Đường Đến!",
+    "message": "Tin vui! Đơn hàng của bạn đã được vận chuyển và đang trên đường đến với bạn.",
+    "orderNumber": "Mã Đơn Hàng: #{{orderNumber}}",
+    "trackingNumber": "Mã Theo Dõi: {{trackingNumber}}",
+    "carrier": "Đơn Vị Vận Chuyển: {{carrier}}",
+    "estimatedDelivery": "Dự Kiến Giao Hàng: {{deliveryDate}}",
+    "trackingMessage": "Bạn có thể theo dõi gói hàng của mình bằng mã theo dõi ở trên hoặc bằng cách nhấp vào nút bên dưới:",
+    "buttonText": "Theo Dõi Gói Hàng Của Bạn",
+    "deliveryAddress": "Địa Chỉ Giao Hàng",
+    "itemsShipped": "Các Mặt Hàng Đã Vận Chuyển",
+    "questions": "Nếu bạn có bất kỳ câu hỏi nào về việc vận chuyển của mình, vui lòng liên hệ với đội ngũ dịch vụ khách hàng của chúng tôi."
+  },
+  "abandonedCart": {
+    "subject": "Bạn Đã Để Lại Sản Phẩm Trong Giỏ Hàng - Hoàn Tất Mua Hàng",
+    "title": "Bạn Đã Để Quên Một Số Thứ!",
+    "message": "Chúng tôi nhận thấy bạn đã để lại một số sản phẩm trong giỏ hàng. Đừng lo lắng, chúng tôi đã lưu chúng cho bạn!",
+    "cartExpiry": "Giỏ hàng của bạn sẽ được lưu trong {{expiryDays}} ngày nữa.",
+    "buttonText": "Hoàn Tất Mua Hàng",
+    "recommendations": "Bạn cũng có thể thích:",
+    "questions": "Nếu bạn gặp bất kỳ vấn đề nào trong quá trình thanh toán, đội ngũ dịch vụ khách hàng của chúng tôi luôn sẵn sàng hỗ trợ."
+  },
+  "reviewRequest": {
+    "subject": "Bạn Đánh Giá Thế Nào Về Sản Phẩm Mới Mua từ Zada?",
+    "title": "Chúng Tôi Rất Mong Nhận Được Phản Hồi Của Bạn!",
+    "message": "Cảm ơn bạn đã mua hàng gần đây từ Zada. Chúng tôi hy vọng bạn đang hài lòng với các sản phẩm mới của mình!",
+    "reviewPrompt": "Bạn có thể dành chút thời gian để chia sẻ ý kiến của mình không? Phản hồi của bạn giúp những người mua sắm khác đưa ra quyết định sáng suốt và giúp chúng tôi cải thiện sản phẩm và dịch vụ.",
+    "buttonText": "Viết Đánh Giá",
+    "incentive": "Để cảm ơn bạn đã đánh giá, chúng tôi sẽ gửi cho bạn mã giảm giá {{discountAmount}} cho lần mua hàng tiếp theo!",
+    "productDetails": "Sản phẩm: {{productName}}",
+    "orderNumber": "Mã Đơn Hàng: #{{orderNumber}}",
+    "purchaseDate": "Ngày Mua: {{purchaseDate}}",
+    "noReviewMessage": "Nếu bạn không muốn để lại đánh giá vào lúc này, không sao cả! Chúng tôi hy vọng bạn hài lòng với sản phẩm đã mua."
+  }
+}

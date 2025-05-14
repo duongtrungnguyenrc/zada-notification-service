@@ -1,0 +1,122 @@
+{
+  "common": {
+    "greeting": "Hello",
+    "footer": {
+      "copyright": "© 2025 Zada. All rights reserved.",
+      "support": "If you need any assistance, please contact our support team at",
+      "supportEmail": "support@zada.com",
+      "address": "Zada, Inc. • 123 Commerce Street • San Francisco, CA 94107",
+      "automated": "This is an automated email. Please do not reply to this message.",
+      "unsubscribe": "Unsubscribe",
+      "preferences": "Email Preferences"
+    },
+    "buttons": {
+      "viewAccount": "View My Account",
+      "shopNow": "Shop Now",
+      "viewDetails": "View Details",
+      "trackOrder": "Track Order",
+      "continue": "Continue Shopping"
+    }
+  },
+  "resetPassword": {
+    "subject": "Reset Your Zada Password",
+    "title": "Reset Your Password",
+    "message": "We received a request to reset your password for your Zada account. To proceed with the password reset, please use the following One-Time Password (OTP):",
+    "otpExpiry": "This code will expire in 10 minutes.",
+    "ignoreMessage": "If you didn't request a password reset, please ignore this email or contact our support team if you have concerns.",
+    "alternativeReset": "Alternatively, you can reset your password directly by clicking the button below:",
+    "buttonText": "Reset Password",
+    "helpText": "If you're having trouble with the button above, copy and paste the URL below into your web browser:"
+  },
+  "newAccount": {
+    "subject": "Welcome to Zada!",
+    "title": "Welcome to Zada,",
+    "message": "Thank you for creating an account with us. Your account has been successfully created and is ready to use.",
+    "getStarted": "Get started by exploring our products and enjoying a seamless shopping experience.",
+    "buttonText": "Start Shopping",
+    "benefits": {
+      "title": "Benefits of your Zada account:",
+      "fastCheckout": "Fast and easy checkout",
+      "orderTracking": "Track your orders in real-time",
+      "saveItems": "Save items to your wishlist",
+      "exclusiveOffers": "Access to exclusive offers and promotions",
+      "orderHistory": "View your order history"
+    },
+    "completeProfile": "Complete your profile to get personalized recommendations and offers.",
+    "completeProfileButton": "Complete Your Profile",
+    "reportSignup": "You received this email because you signed up for Zada. If you didn't sign up, please let us know."
+  },
+  "verifyEmail": {
+    "subject": "Verify Your Email for Zada",
+    "title": "Verify Your Email Address",
+    "message": "Thank you for choosing Zada! To complete your registration and access all features, please verify your email address using the verification code below:",
+    "otpExpiry": "This code will expire in 30 minutes.",
+    "verifyPrompt": "Please enter this code on the verification page to confirm your email address.",
+    "alternativeVerify": "Alternatively, you can verify your email directly by clicking the button below:",
+    "buttonText": "Verify Email Address",
+    "benefits": {
+      "title": "Benefits of verifying your email:",
+      "secureAccount": "Secure your account and personal information",
+      "orderUpdates": "Receive order updates and shipping notifications",
+      "specialOffers": "Get access to special offers and promotions",
+      "passwordReset": "Enable password reset functionality"
+    },
+    "ignoreMessage": "If you didn't create an account on Zada, please ignore this email or contact our support team if you have concerns."
+  },
+  "orderConfirmation": {
+    "subject": "Order Confirmation - Zada Order #{{orderNumber}}",
+    "title": "Thank You for Your Order!",
+    "message": "We've received your order and are working on it right away.",
+    "orderNumber": "Order Number: #{{orderNumber}}",
+    "orderDate": "Order Date: {{orderDate}}",
+    "orderSummary": "Order Summary",
+    "shippingAddress": "Shipping Address",
+    "billingAddress": "Billing Address",
+    "paymentMethod": "Payment Method",
+    "shippingMethod": "Shipping Method",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "discount": "Discount",
+    "total": "Total",
+    "estimatedDelivery": "Estimated Delivery: {{deliveryDate}}",
+    "trackingInfo": "We'll send you tracking information once your order ships.",
+    "questions": "If you have any questions about your order, please contact our customer service team.",
+    "buttonText": "View Order Details"
+  },
+  "shippingConfirmation": {
+    "subject": "Your Zada Order Has Shipped - Order #{{orderNumber}}",
+    "title": "Your Order is on the Way!",
+    "message": "Good news! Your order has been shipped and is on its way to you.",
+    "orderNumber": "Order Number: #{{orderNumber}}",
+    "trackingNumber": "Tracking Number: {{trackingNumber}}",
+    "carrier": "Carrier: {{carrier}}",
+    "estimatedDelivery": "Estimated Delivery: {{deliveryDate}}",
+    "trackingMessage": "You can track your package using the tracking number above or by clicking the button below:",
+    "buttonText": "Track Your Package",
+    "deliveryAddress": "Delivery Address",
+    "itemsShipped": "Items Shipped",
+    "questions": "If you have any questions about your shipment, please contact our customer service team."
+  },
+  "abandonedCart": {
+    "subject": "You Left Items in Your Cart - Complete Your Purchase",
+    "title": "You Left Something Behind!",
+    "message": "We noticed you left some items in your shopping cart. Don't worry, we've saved them for you!",
+    "cartExpiry": "Your cart will be saved for {{expiryDays}} more days.",
+    "buttonText": "Complete Your Purchase",
+    "recommendations": "You might also like:",
+    "questions": "If you experienced any issues during checkout, our customer service team is here to help."
+  },
+  "reviewRequest": {
+    "subject": "How Was Your Recent Purchase from Zada?",
+    "title": "We'd Love Your Feedback!",
+    "message": "Thank you for your recent purchase from Zada. We hope you're enjoying your new items!",
+    "reviewPrompt": "Would you mind taking a moment to share your thoughts? Your feedback helps other shoppers make informed decisions and helps us improve our products and services.",
+    "buttonText": "Write a Review",
+    "incentive": "As a thank you for your review, we'll send you a {{discountAmount}} discount code for your next purchase!",
+    "productDetails": "Product: {{productName}}",
+    "orderNumber": "Order Number: #{{orderNumber}}",
+    "purchaseDate": "Purchase Date: {{purchaseDate}}",
+    "noReviewMessage": "If you prefer not to leave a review at this time, no problem! We hope you enjoy your purchase."
+  }
+}

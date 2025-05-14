@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{t "newAccount.subject"}}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .welcome-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4a6ee0;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .benefits {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f5f7ff;
+            border-radius: 8px;
+        }
+        .benefit-item {
+            margin-bottom: 15px;
+        }
+        .benefit-icon {
+            font-weight: bold;
+            color: #4a6ee0;
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+        .product-recommendations {
+            margin-top: 30px;
+        }
+        .product-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .product-item {
+            width: 30%;
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .product-name {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .product-price {
+            color: #4a6ee0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
+        </div>
+        <div class="content">
+            <h1>{{t "newAccount.title"}} {{userName}}!</h1>
+            <p>{{t "newAccount.message"}}</p>
+            
+            <img src="{{welcomeImageUrl}}" alt="Welcome to Zada" class="welcome-image">
+            
+            <p>{{t "newAccount.getStarted"}}</p>
+            
+            <div style="text-align: center;">
+                <a href="{{shopUrl}}" class="button">{{t "newAccount.buttonText"}}</a>
+            </div>
+            
+            <div class="benefits">
+                <h3>{{t "newAccount.benefits.title"}}</h3>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span> {{t "newAccount.benefits.fastCheckout"}}
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span> {{t "newAccount.benefits.orderTracking"}}
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span> {{t "newAccount.benefits.saveItems"}}
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span> {{t "newAccount.benefits.exclusiveOffers"}}
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span> {{t "newAccount.benefits.orderHistory"}}
+                </div>
+            </div>
+            
+            <p>{{t "newAccount.completeProfile"}}</p>
+            
+            <div style="text-align: center;">
+                <a href="{{profileUrl}}" class="button" style="background-color: #34a853;">{{t "newAccount.completeProfileButton"}}</a>
+            </div>
+            
+            {{#if recommendedProducts}}
+            <div class="product-recommendations">
+                <h3>Products You Might Like:</h3>
+                <div class="product-row">
+                    {{#each recommendedProducts}}
+                    <div class="product-item">
+                        <img src="{{this.imageUrl}}" alt="{{this.name}}" class="product-image">
+                        <div class="product-name">{{this.name}}</div>
+                        <div class="product-price">{{this.price}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+        </div>
+        <div class="footer">
+            <p>{{t "common.footer.copyright"}}</p>
+            <p>{{t "common.footer.support"}} <a href="mailto:{{t "common.footer.supportEmail"}}">{{t "common.footer.supportEmail"}}</a></p>
+            <p>{{t "common.footer.address"}}</p>
+            <p>
+                <small>{{t "newAccount.reportSignup"}} <a href="{{reportUrl}}">{{t "common.footer.support"}}</a></small>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
