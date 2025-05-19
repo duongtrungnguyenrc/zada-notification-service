@@ -9,11 +9,12 @@ async function bootstrap() {
 
   const app = await createNestroApplication(AppModule, {
     server: {
-      host: configService.get<string>("NESTRO_HOST"),
-      port: configService.get<number>("NESTRO_PORT"),
+      host: configService.getOrThrow<string>("NESTRO_HOST"),
+      port: configService.getOrThrow<number>("NESTRO_PORT"),
     },
     client: {
-      name: configService.get<string>("SERVICE_NAME"),
+      name: configService.getOrThrow<string>("SERVICE_NAME"),
+      host: configService.getOrThrow<string>("SERVICE_HOST"),
     },
   });
 

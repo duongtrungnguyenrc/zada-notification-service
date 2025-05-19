@@ -1,7 +1,6 @@
 import { HandlebarsAdapter } from "@nestjs-modules/mailer/dist/adapters/handlebars.adapter";
 import { MailerModule } from "@nestjs-modules/mailer";
 import { ConfigService } from "@nestjs/config";
-import * as handlebars from "handlebars";
 import { Module } from "@nestjs/common";
 import { join } from "path";
 
@@ -13,10 +12,6 @@ import { I18nService } from "nestjs-i18n";
   imports: [
     MailerModule.forRootAsync({
       useFactory: (configService: ConfigService, i18nService: I18nService) => {
-        handlebars.registerHelper("t", function (key: string) {
-          return i18nService.t(`templates.${key}`);
-        });
-
         return {
           transport: {
             host: configService.get<string>("MAILER_HOST"),
@@ -29,10 +24,7 @@ import { I18nService } from "nestjs-i18n";
           },
           template: {
             dir: join(__dirname, "mailer", "../templates"),
-            adapter: new HandlebarsAdapter(),
-            options: {
-              strict: true,
-            },
+            adapter: new HandlebarsAdapter({ t: i18nService.hbsHelper }),
           },
         };
       },
