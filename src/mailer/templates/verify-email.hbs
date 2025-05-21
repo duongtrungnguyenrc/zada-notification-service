@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{t "verifyEmail.subject"}}</title>
+    <title>{{t "verify-account.subject"}}</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -85,35 +85,35 @@
             <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
         </div>
         <div class="content">
-            <h2>{{t "verifyEmail.title"}}</h2>
+            <h2>{{t "verify-account.title"}}</h2>
             <p>{{t "common.greeting"}} {{userName}},</p>
-            <p>{{t "verifyEmail.message"}}</p>
+            <p>{{t "verify-account.message"}}</p>
             
             <div class="otp-container">
-                <div class="otp-code">{{otpCode}}</div>
+                <div class="otp-code">{{otp}}</div>
             </div>
             
-            <p>{{t "verifyEmail.otpExpiry"}}</p>
-            <p>{{t "verifyEmail.verifyPrompt"}}</p>
+            <p>{{t "verify-account.otpExpiry"}}</p>
+            <p>{{t "verify-account.verifyPrompt"}}</p>
             
-            <p>{{t "verifyEmail.alternativeVerify"}}</p>
+            <p>{{t "verify-account.alternativeVerify"}}</p>
             
             <div style="text-align: center;">
-                <a href="{{verifyUrl}}" class="button">{{t "verifyEmail.buttonText"}}</a>
+                <a href="{{verifyUrl}}" class="button">{{t "verify-account.buttonText"}}</a>
             </div>
             
             <div class="benefits">
-                <h3>{{t "verifyEmail.benefits.title"}}</h3>
+                <h3>{{t "verify-account.benefits.title"}}</h3>
                 <ul>
-                    <li>{{t "verifyEmail.benefits.secureAccount"}}</li>
-                    <li>{{t "verifyEmail.benefits.orderUpdates"}}</li>
-                    <li>{{t "verifyEmail.benefits.specialOffers"}}</li>
-                    <li>{{t "verifyEmail.benefits.passwordReset"}}</li>
+                    <li>{{t "verify-account.benefits.secureAccount"}}</li>
+                    <li>{{t "verify-account.benefits.orderUpdates"}}</li>
+                    <li>{{t "verify-account.benefits.specialOffers"}}</li>
+                    <li>{{t "verify-account.benefits.passwordReset"}}</li>
                 </ul>
             </div>
             
             <div class="help-text">
-                <p>{{t "verifyEmail.ignoreMessage"}}</p>
+                <p>{{t "verify-account.ignoreMessage"}}</p>
             </div>
         </div>
         <div class="footer">

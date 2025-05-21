@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{t "shippingConfirmation.subject" orderNumber=orderNumber}}</title>
+    <title>{{t "shipping-confirmation.subject" orderNumber=orderNumber}}</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -149,19 +149,19 @@
             <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
         </div>
         <div class="content">
-            <h2>{{t "shippingConfirmation.title"}}</h2>
+            <h2>{{t "shipping-confirmation.title"}}</h2>
             <p>{{t "common.greeting"}} {{userName}},</p>
-            <p>{{t "shippingConfirmation.message"}}</p>
+            <p>{{t "shipping-confirmation.message"}}</p>
             
             <div class="shipping-icon">
                 <img src="{{shippingIconUrl}}" alt="Shipping Icon">
             </div>
             
             <div class="tracking-info">
-                <div>{{t "shippingConfirmation.orderNumber" orderNumber=orderNumber}}</div>
-                <div class="tracking-number">{{t "shippingConfirmation.trackingNumber" trackingNumber=trackingNumber}}</div>
-                <div>{{t "shippingConfirmation.carrier" carrier=carrier}}</div>
-                <div>{{t "shippingConfirmation.estimatedDelivery" deliveryDate=estimatedDelivery}}</div>
+                <div>{{t "shipping-confirmation.orderNumber" orderNumber=orderNumber}}</div>
+                <div class="tracking-number">{{t "shipping-confirmation.trackingNumber" trackingNumber=trackingNumber}}</div>
+                <div>{{t "shipping-confirmation.carrier" carrier=carrier}}</div>
+                <div>{{t "shipping-confirmation.estimatedDelivery" deliveryDate=estimatedDelivery}}</div>
             </div>
             
             <div class="delivery-progress">
@@ -174,14 +174,14 @@
                 </div>
             </div>
             
-            <p>{{t "shippingConfirmation.trackingMessage"}}</p>
+            <p>{{t "shipping-confirmation.trackingMessage"}}</p>
             
             <div style="text-align: center;">
-                <a href="{{trackingUrl}}" class="button">{{t "shippingConfirmation.buttonText"}}</a>
+                <a href="{{trackingUrl}}" class="button">{{t "shipping-confirmation.buttonText"}}</a>
             </div>
             
             <div class="delivery-address">
-                <div class="address-title">{{t "shippingConfirmation.deliveryAddress"}}</div>
+                <div class="address-title">{{t "shipping-confirmation.deliveryAddress"}}</div>
                 <p>
                     {{shippingAddress.name}}<br>
                     {{shippingAddress.street}}<br>
@@ -191,7 +191,7 @@
             </div>
             
             <div class="order-details">
-                <h3>{{t "shippingConfirmation.itemsShipped"}}</h3>
+                <h3>{{t "shipping-confirmation.itemsShipped"}}</h3>
                 
                 {{#each items}}
                 <div class="order-item">
@@ -205,7 +205,7 @@
             </div>
             
             <div class="help-text">
-                <p>{{t "shippingConfirmation.questions"}}</p>
+                <p>{{t "shipping-confirmation.questions"}}</p>
             </div>
         </div>
         <div class="footer">

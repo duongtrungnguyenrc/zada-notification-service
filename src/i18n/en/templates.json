@@ -18,7 +18,7 @@
       "continue": "Continue Shopping"
     }
   },
-  "resetPassword": {
+  "reset-password": {
     "subject": "Reset Your Zada Password",
     "title": "Reset Your Password",
     "message": "We received a request to reset your password for your Zada account. To proceed with the password reset, please use the following One-Time Password (OTP):",
@@ -28,7 +28,7 @@
     "buttonText": "Reset Password",
     "helpText": "If you're having trouble with the button above, copy and paste the URL below into your web browser:"
   },
-  "newAccount": {
+  "new-account": {
     "subject": "Welcome to Zada!",
     "title": "Welcome to Zada,",
     "message": "Thank you for creating an account with us. Your account has been successfully created and is ready to use.",
@@ -46,14 +46,14 @@
     "completeProfileButton": "Complete Your Profile",
     "reportSignup": "You received this email because you signed up for Zada. If you didn't sign up, please let us know."
   },
-  "verifyEmail": {
-    "subject": "Verify Your Email for Zada",
-    "title": "Verify Your Email Address",
+  "verify-account": {
+    "subject": "Verify Your Account for Zada",
+    "title": "Verify Your Account",
     "message": "Thank you for choosing Zada! To complete your registration and access all features, please verify your email address using the verification code below:",
-    "otpExpiry": "This code will expire in 30 minutes.",
+    "otpExpiry": "This code will expire in 15 minutes.",
     "verifyPrompt": "Please enter this code on the verification page to confirm your email address.",
     "alternativeVerify": "Alternatively, you can verify your email directly by clicking the button below:",
-    "buttonText": "Verify Email Address",
+    "buttonText": "Verify Account",
     "benefits": {
       "title": "Benefits of verifying your email:",
       "secureAccount": "Secure your account and personal information",
@@ -63,7 +63,7 @@
     },
     "ignoreMessage": "If you didn't create an account on Zada, please ignore this email or contact our support team if you have concerns."
   },
-  "orderConfirmation": {
+  "order-confirmation": {
     "subject": "Order Confirmation - Zada Order #{{orderNumber}}",
     "title": "Thank You for Your Order!",
     "message": "We've received your order and are working on it right away.",
@@ -84,7 +84,7 @@
     "questions": "If you have any questions about your order, please contact our customer service team.",
     "buttonText": "View Order Details"
   },
-  "shippingConfirmation": {
+  "shipping-confirmation": {
     "subject": "Your Zada Order Has Shipped - Order #{{orderNumber}}",
     "title": "Your Order is on the Way!",
     "message": "Good news! Your order has been shipped and is on its way to you.",
@@ -98,7 +98,7 @@
     "itemsShipped": "Items Shipped",
     "questions": "If you have any questions about your shipment, please contact our customer service team."
   },
-  "abandonedCart": {
+  "abandoned-cart": {
     "subject": "You Left Items in Your Cart - Complete Your Purchase",
     "title": "You Left Something Behind!",
     "message": "We noticed you left some items in your shopping cart. Don't worry, we've saved them for you!",
@@ -107,7 +107,7 @@
     "recommendations": "You might also like:",
     "questions": "If you experienced any issues during checkout, our customer service team is here to help."
   },
-  "reviewRequest": {
+  "review-request": {
     "subject": "How Was Your Recent Purchase from Zada?",
     "title": "We'd Love Your Feedback!",
     "message": "Thank you for your recent purchase from Zada. We hope you're enjoying your new items!",

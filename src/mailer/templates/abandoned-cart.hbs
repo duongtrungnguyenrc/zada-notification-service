@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{t "abandonedCart.subject"}}</title>
+    <title>{{t "abandoned-cart.subject"}}</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -147,9 +147,9 @@
             <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
         </div>
         <div class="content">
-            <h2>{{t "abandonedCart.title"}}</h2>
+            <h2>{{t "abandoned-cart.title"}}</h2>
             <p>{{t "common.greeting"}} {{userName}},</p>
-            <p>{{t "abandonedCart.message"}}</p>
+            <p>{{t "abandoned-cart.message"}}</p>
             
             <div class="cart-icon">
                 <img src="{{cartIconUrl}}" alt="Shopping Cart">
@@ -178,15 +178,15 @@
                 </div>
             </div>
             
-            <p>{{t "abandonedCart.cartExpiry" expiryDays=cartExpiryDays}}</p>
+            <p>{{t "abandoned-cart.cartExpiry" expiryDays=cartExpiryDays}}</p>
             
             <div style="text-align: center;">
-                <a href="{{cartUrl}}" class="button">{{t "abandonedCart.buttonText"}}</a>
+                <a href="{{cartUrl}}" class="button">{{t "abandoned-cart.buttonText"}}</a>
             </div>
             
             {{#if recommendedProducts}}
             <div class="recommendations">
-                <div class="recommendation-title">{{t "abandonedCart.recommendations"}}</div>
+                <div class="recommendation-title">{{t "abandoned-cart.recommendations"}}</div>
                 <div class="recommendation-items">
                     {{#each recommendedProducts}}
                     <div class="recommendation-item">
@@ -200,7 +200,7 @@
             {{/if}}
             
             <div class="help-text">
-                <p>{{t "abandonedCart.questions"}}</p>
+                <p>{{t "abandoned-cart.questions"}}</p>
             </div>
         </div>
         <div class="footer">

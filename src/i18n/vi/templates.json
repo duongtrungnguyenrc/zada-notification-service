@@ -46,7 +46,7 @@
     "completeProfileButton": "Hoàn Thành Hồ Sơ",
     "reportSignup": "Bạn nhận được email này vì bạn đã đăng ký Zada. Nếu bạn không đăng ký, vui lòng cho chúng tôi biết."
   },
-  "verifyEmail": {
+  "verify-account": {
     "subject": "Xác Minh Email Của Bạn cho Zada",
     "title": "Xác Minh Địa Chỉ Email Của Bạn",
     "message": "Cảm ơn bạn đã chọn Zada! Để hoàn tất đăng ký và truy cập tất cả các tính năng, vui lòng xác minh địa chỉ email của bạn bằng mã xác minh dưới đây:",
@@ -63,7 +63,7 @@
     },
     "ignoreMessage": "Nếu bạn không tạo tài khoản trên Zada, vui lòng bỏ qua email này hoặc liên hệ với đội ngũ hỗ trợ của chúng tôi nếu bạn có thắc mắc."
   },
-  "orderConfirmation": {
+  "order-confirmation": {
     "subject": "Xác Nhận Đơn Hàng - Đơn Hàng Zada #{{orderNumber}}",
     "title": "Cảm Ơn Bạn Đã Đặt Hàng!",
     "message": "Chúng tôi đã nhận được đơn hàng của bạn và đang xử lý ngay lập tức.",
@@ -84,7 +84,7 @@
     "questions": "Nếu bạn có bất kỳ câu hỏi nào về đơn hàng của mình, vui lòng liên hệ với đội ngũ dịch vụ khách hàng của chúng tôi.",
     "buttonText": "Xem Chi Tiết Đơn Hàng"
   },
-  "shippingConfirmation": {
+  "shipping-confirmation": {
     "subject": "Đơn Hàng Zada Của Bạn Đã Được Vận Chuyển - Đơn Hàng #{{orderNumber}}",
     "title": "Đơn Hàng Của Bạn Đang Trên Đường Đến!",
     "message": "Tin vui! Đơn hàng của bạn đã được vận chuyển và đang trên đường đến với bạn.",
@@ -98,7 +98,7 @@
     "itemsShipped": "Các Mặt Hàng Đã Vận Chuyển",
     "questions": "Nếu bạn có bất kỳ câu hỏi nào về việc vận chuyển của mình, vui lòng liên hệ với đội ngũ dịch vụ khách hàng của chúng tôi."
   },
-  "abandonedCart": {
+  "abandoned-cart": {
     "subject": "Bạn Đã Để Lại Sản Phẩm Trong Giỏ Hàng - Hoàn Tất Mua Hàng",
     "title": "Bạn Đã Để Quên Một Số Thứ!",
     "message": "Chúng tôi nhận thấy bạn đã để lại một số sản phẩm trong giỏ hàng. Đừng lo lắng, chúng tôi đã lưu chúng cho bạn!",
@@ -107,7 +107,7 @@
     "recommendations": "Bạn cũng có thể thích:",
     "questions": "Nếu bạn gặp bất kỳ vấn đề nào trong quá trình thanh toán, đội ngũ dịch vụ khách hàng của chúng tôi luôn sẵn sàng hỗ trợ."
   },
-  "reviewRequest": {
+  "review-request": {
     "subject": "Bạn Đánh Giá Thế Nào Về Sản Phẩm Mới Mua từ Zada?",
     "title": "Chúng Tôi Rất Mong Nhận Được Phản Hồi Của Bạn!",
     "message": "Cảm ơn bạn đã mua hàng gần đây từ Zada. Chúng tôi hy vọng bạn đang hài lòng với các sản phẩm mới của mình!",

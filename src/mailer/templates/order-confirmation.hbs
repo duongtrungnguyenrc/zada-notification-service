@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{t "orderConfirmation.subject" orderNumber=orderNumber}}</title>
+    <title>{{t "order-confirmation.subject" orderNumber=orderNumber}}</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -145,21 +145,21 @@
             <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
         </div>
         <div class="content">
-            <h2>{{t "orderConfirmation.title"}}</h2>
+            <h2>{{t "order-confirmation.title"}}</h2>
             <p>{{t "common.greeting"}} {{userName}},</p>
-            <p>{{t "orderConfirmation.message"}}</p>
+            <p>{{t "order-confirmation.message"}}</p>
             
             <div class="order-info">
-                <div class="order-number">{{t "orderConfirmation.orderNumber" orderNumber=orderNumber}}</div>
-                <div class="order-date">{{t "orderConfirmation.orderDate" orderDate=orderDate}}</div>
+                <div class="order-number">{{t "order-confirmation.orderNumber" orderNumber=orderNumber}}</div>
+                <div class="order-date">{{t "order-confirmation.orderDate" orderDate=orderDate}}</div>
             </div>
             
             <div style="text-align: center;">
-                <a href="{{orderDetailsUrl}}" class="button">{{t "orderConfirmation.buttonText"}}</a>
+                <a href="{{orderDetailsUrl}}" class="button">{{t "order-confirmation.buttonText"}}</a>
             </div>
             
             <div class="order-summary">
-                <h3>{{t "orderConfirmation.orderSummary"}}</h3>
+                <h3>{{t "order-confirmation.orderSummary"}}</h3>
                 
                 {{#each items}}
                 <div class="order-item">
@@ -175,57 +175,57 @@
             
             <div class="address-section">
                 <div class="address-column">
-                    <div class="address-title">{{t "orderConfirmation.shippingAddress"}}</div>
+                    <div class="address-title">{{t "order-confirmation.shippingAddress"}}</div>
                     <p>
                         {{shippingAddress.name}}<br>
                         {{shippingAddress.street}}<br>
                         {{shippingAddress.city}}, {{shippingAddress.state}} {{shippingAddress.zip}}<br>
                         {{shippingAddress.country}}
                     </p>
-                    <p>{{t "orderConfirmation.shippingMethod"}}: {{shippingMethod}}</p>
+                    <p>{{t "order-confirmation.shippingMethod"}}: {{shippingMethod}}</p>
                 </div>
                 
                 <div class="address-column">
-                    <div class="address-title">{{t "orderConfirmation.billingAddress"}}</div>
+                    <div class="address-title">{{t "order-confirmation.billingAddress"}}</div>
                     <p>
                         {{billingAddress.name}}<br>
                         {{billingAddress.street}}<br>
                         {{billingAddress.city}}, {{billingAddress.state}} {{billingAddress.zip}}<br>
                         {{billingAddress.country}}
                     </p>
-                    <p>{{t "orderConfirmation.paymentMethod"}}: {{paymentMethod}}</p>
+                    <p>{{t "order-confirmation.paymentMethod"}}: {{paymentMethod}}</p>
                 </div>
             </div>
             
             <div class="totals">
                 <div class="total-row">
-                    <span class="total-label">{{t "orderConfirmation.subtotal"}}</span>
+                    <span class="total-label">{{t "order-confirmation.subtotal"}}</span>
                     <span class="total-value">{{subtotal}}</span>
                 </div>
                 <div class="total-row">
-                    <span class="total-label">{{t "orderConfirmation.shipping"}}</span>
+                    <span class="total-label">{{t "order-confirmation.shipping"}}</span>
                     <span class="total-value">{{shipping}}</span>
                 </div>
                 <div class="total-row">
-                    <span class="total-label">{{t "orderConfirmation.tax"}}</span>
+                    <span class="total-label">{{t "order-confirmation.tax"}}</span>
                     <span class="total-value">{{tax}}</span>
                 </div>
                 {{#if discount}}
                 <div class="total-row">
-                    <span class="total-label">{{t "orderConfirmation.discount"}}</span>
+                    <span class="total-label">{{t "order-confirmation.discount"}}</span>
                     <span class="total-value">-{{discount}}</span>
                 </div>
                 {{/if}}
                 <div class="total-row grand-total">
-                    <span class="total-label">{{t "orderConfirmation.total"}}</span>
+                    <span class="total-label">{{t "order-confirmation.total"}}</span>
                     <span class="total-value">{{total}}</span>
                 </div>
             </div>
             
             <div class="help-text">
-                <p>{{t "orderConfirmation.estimatedDelivery" deliveryDate=estimatedDelivery}}</p>
-                <p>{{t "orderConfirmation.trackingInfo"}}</p>
-                <p>{{t "orderConfirmation.questions"}}</p>
+                <p>{{t "order-confirmation.estimatedDelivery" deliveryDate=estimatedDelivery}}</p>
+                <p>{{t "order-confirmation.trackingInfo"}}</p>
+                <p>{{t "order-confirmation.questions"}}</p>
             </div>
         </div>
         <div class="footer">

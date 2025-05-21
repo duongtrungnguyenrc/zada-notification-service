@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{t "reviewRequest.subject"}}</title>
+    <title>{{t "review-request.subject"}}</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,21 +116,21 @@
             <img src="{{logoUrl}}" alt="Zada Logo" class="logo">
         </div>
         <div class="content">
-            <h2>{{t "reviewRequest.title"}}</h2>
+            <h2>{{t "review-request.title"}}</h2>
             <p>{{t "common.greeting"}} {{userName}},</p>
-            <p>{{t "reviewRequest.message"}}</p>
+            <p>{{t "review-request.message"}}</p>
             
             <div class="product-section">
                 <img src="{{product.imageUrl}}" alt="{{product.name}}" class="product-image">
                 <div class="product-details">
                     <div class="product-name">{{product.name}}</div>
-                    <div class="product-meta">{{t "reviewRequest.productDetails" productName=product.name}}</div>
-                    <div class="product-meta">{{t "reviewRequest.orderNumber" orderNumber=orderNumber}}</div>
-                    <div class="product-meta">{{t "reviewRequest.purchaseDate" purchaseDate=purchaseDate}}</div>
+                    <div class="product-meta">{{t "review-request.productDetails" productName=product.name}}</div>
+                    <div class="product-meta">{{t "review-request.orderNumber" orderNumber=orderNumber}}</div>
+                    <div class="product-meta">{{t "review-request.purchaseDate" purchaseDate=purchaseDate}}</div>
                 </div>
             </div>
             
-            <p>{{t "reviewRequest.reviewPrompt"}}</p>
+            <p>{{t "review-request.reviewPrompt"}}</p>
             
             <div class="rating-stars">
                 <a href="{{reviewUrl}}?rating=1" class="star">1</a>
@@ -141,17 +141,17 @@
             </div>
             
             <div style="text-align: center;">
-                <a href="{{reviewUrl}}" class="button">{{t "reviewRequest.buttonText"}}</a>
+                <a href="{{reviewUrl}}" class="button">{{t "review-request.buttonText"}}</a>
             </div>
             
             {{#if discountAmount}}
             <div class="incentive-box">
-                <p>{{t "reviewRequest.incentive" discountAmount=discountAmount}}</p>
+                <p>{{t "review-request.incentive" discountAmount=discountAmount}}</p>
             </div>
             {{/if}}
             
             <div class="help-text">
-                <p>{{t "reviewRequest.noReviewMessage"}}</p>
+                <p>{{t "review-request.noReviewMessage"}}</p>
             </div>
         </div>
         <div class="footer">
